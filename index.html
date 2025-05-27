@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши визитные карточки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.gif');
+            background-color: ; /* Тёмный фон */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-blend-mode: overlay; /* Смешивает GIF с тёмным фоном */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+        .card {
+            background: rgba(40, 40, 40, 0.9); /* Тёмный полупрозрачный фон карточек */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #fff; /* Белый текст для читаемости */
+        }
+        p {
+            font-size: 14px;
+            color: #ddd; /* Светло-серый текст */
+            margin: 5px 0;
+        }
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            min-width: 100px;
+            text-align: center;
+            touch-action: manipulation;
+        }
+        .github { background-color: #24292e; }
+        .steam { background-color: #171a21; }
+        .discord { background-color: #5865F2; }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                padding: 15px;
+                max-width: 90%;
+            }
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 12px;
+            }
+            .social-links a {
+                padding: 8px 15px;
+                font-size: 12px;
+                min-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Твоя карточка -->
+        <div class="card">
+            <img src="avatar.jpg" alt="Аватар" class="avatar">
+            <h1>testfor @p[r=3]</h1>
+            <p>Программисты | Геймеры | Энтузиасты</p>
+            <div class="social-links">
+                <a href="https://github.com/vladcv-afk" class="github">GitHub</a>
+                <a href="https://steamcommunity.com/profiles/76561199527635479/" class="steam">Steam</a>
+                <a href="https://discord.com/users/780744641594916865" class="discord">Discord</a>
+            </div>
+        </div>
+        <!-- Карточка друга -->
+        <div class="card">
+            <img src="friend-avatar.jpg" alt="Аватар друга" class="avatar">
+            <h1>ȺɍŧǤøđ</h1>
+            <p>Программисты | Геймеры | Энтузиасты</p>
+            <div class="social-links">
+                <a href="https://github.com/friend-username" class="github">GitHub</a>
+                <a href="https://steamcommunity.com/profiles/76561199697352650" class="steam">Steam</a>
+                <a href="https://discord.com/users/1245260755440369706" class="discord">Discord</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
